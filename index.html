@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
       <a href="">
-        <svg>
+        <img src="./img/icon/logo.svg" alt="логотип" />
+        <!-- <svg>
           <use href="./img/icon/logo.svg"></use>
-        </svg>
+        </svg> -->
       </a>
       <nav>
         <ul>
@@ -22,7 +34,7 @@
         </ul>
         <ul>
           <li><a href="">+38 044 111 11 11</a></li>
-          <li><a href="">онлайн-запись</a></li>
+          <li><a href="#appointment" class="button">онлайн-запись</a></li>
         </ul>
         <ul>
           <li><a href="">Instagram</a></li>
@@ -167,7 +179,7 @@
       <!-- Contacts -->
       <section>
         <form action="">
-          <b>Онлайн-запись</b>
+          <b id="appointment">Онлайн-запись</b>
           <input type="text" name="" id="" />
           <input type="text" name="" id="" />
           <label for="">сообщение</label>

@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 160px;
+  height: 40px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  @include fonts(12px, 600, 1.333, 0.09em);
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  background-color: transparent;
+
+  &:hover, &:focus {
+    background-color: var(--accent-color);
+  }
+}
