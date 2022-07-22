@@ -25,4 +25,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.pretitle {
+  @include fonts(15px, 600 , 1.364, 0.01em);
+  color: var(--title-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
  

@@ -1,0 +1,13 @@
+.section {
+  margin-top: 84px;
+
+  &__title {
+    font-family: 'Raleway';
+    @include fonts(28px, 700 , 1.179, 0.05em);
+    color: var(--title-color);
+  }
+}
+
+.container {
+  padding: 0 31px;
+}

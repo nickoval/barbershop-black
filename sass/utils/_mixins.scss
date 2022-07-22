@@ -5,13 +5,13 @@
   letter-spacing: $ls;
 }
 
-@mixin flexXY ($ai:center, $jc:center) {
+@mixin flexXY ($jc:center, $ai:center) {
   display: flex;
-  align-items: $ai;
   justify-content: $jc;
+  align-items: $ai;
 }
 
-@mixin flexX ($ai:center) {
+@mixin flexY ($ai:center) {
   display: flex;
   align-items: $ai;
 }
