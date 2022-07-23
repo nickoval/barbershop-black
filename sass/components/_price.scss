@@ -1,0 +1,131 @@
+.price {
+  width: 100%;
+  max-width: 480px;
+  height: 826px;
+  padding-top: 84px;
+  background-color: var(--price-bg-color);
+  background-image: url(/img/mobile/price.png);
+
+  // background-image: linear-gradient(180deg, rgba(17, 19, 25, 0.5), rgba(17, 19, 25, 0.5)), url(/img/mobile/price.jpg);
+
+  &__title {
+    margin-bottom: 44px;
+    color: var(--white-text-color);
+  }
+
+  &__pretitle {
+    color: var(--pretitle-opacity-color);
+
+    &::before {
+      background-color: var(--pretitle-opacity-color);
+    }
+  }
+
+  &__button {
+    margin: 50px auto 0;
+  }
+
+
+}
+
+.table-wrapper {
+  width: 418px;
+  height: 440px;
+  padding: 30px;
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-table {
+  // color: var(--hero-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__row {
+    display: flex;
+    align-items: baseline;
+    // justify-content: space-between;
+      color: var(--hero-text-color);
+  }
+  
+  // &__first-col::after {
+  //   content: '';
+  //   display: inline-block;
+  //   margin-left: 4px;
+  //   margin-right: 4px;
+  //   flex-basis: 100px;
+  //   height: 1px;
+  //   background-color: var(--hero-text-color);
+  // }
+
+    &__first-col {
+      white-space: nowrap;
+    }
+
+  &__second-col {
+    flex-basis: 100%;
+    // height: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+    }
+
+}
+
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+    width: 418px;
+      height: 440px;
+      padding: 30px;
+      background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-list {
+    display: flex;
+      flex-direction: column;
+      gap: 20px;
+  // padding: 30px 40px;
+  // flex-grow: 1;
+
+  // &:first-child {
+  //   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  // }
+
+  // &:last-child {
+  //   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  // }
+}
+
+.price-list__item {
+  margin-bottom: var(--typical-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &::after {
+    content: '';
+    width: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+  }
+
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
+}
+
+.price-list__text {
+  // font-size: 18px;
+  // line-height: 1.67;
+  // letter-spacing: 0.02em;
+        white-space: nowrap;
+ color: var(--hero-text-color);
+
+  &:last-child {
+    order: 1;
+  }
+}

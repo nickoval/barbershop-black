@@ -1,0 +1,15 @@
+.about-pictures {
+  display: none;
+}
+
+.about {
+  &__title {
+    @include fonts(28px, 700, 1.179, 0.05em);
+  }
+
+  &__text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    @include fonts(14px);
+  }
+}

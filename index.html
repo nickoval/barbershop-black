@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -49,133 +53,232 @@
         </div>
       </div>
     </header>
+
     <main>
       <!-- Hero -->
       <section class="section hero">
         <div class="container">
-          <p class="pretitle">A hair salon for men in Kyiv</p>
-          <h1 class="section__title hero__title">BarberShop</h1>
-          <p>
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
-            вкусом.
+          <div class="hero__content">
+            <p class="section__pretitle hero__pretitle">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="section__title hero__title">BarberShop</h1>
+            <p class="section__text hero__text">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
+              и со вкусом.
+            </p>
+            <ul class="hero__menu">
+              <li>Назад</li>
+              <li>Вперед</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- About us -->
+      <section class="section about">
+        <div class="container">
+          <ul class="about-pictures">
+            <li><img src="./img/desktop/about1.jpg" alt="" /></li>
+            <li><img src="./img/desktop/about2.jpg" alt="" /></li>
+          </ul>
+          <div>
+            <p class="section__pretitle">О нас</p>
+            <h2 class="section__title">Лучший Барбершоп твоего города</h2>
+            <p class="section__text">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе
+              точно к нам.
+            </p>
+            <p class="about__text">
+              Мы команда, которая никогда не останавливается на достигнутом и
+              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с
+              клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <a href="#appointment" class="button button--textblack"
+              >онлайн-запись</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Price -->
+      <section class="section price">
+        <div class="container">
+          <p class="section__pretitle price__pretitle">
+            Проведи время в компании лучших мастеров
           </p>
-          <ul>
-            <li>Назад</li>
-            <li>Вперед</li>
+          <h2 class="section__title price__title">Услуги и цены</h2>
+          <div class="price-wrapper">
+            <ul class="price-list">
+              <li class="price-list__item">
+                <p class="price-list__text">Мужская стрижка</p>
+                <p class="price-list__text">от 300 грн.</p>
+              </li>
+              <li class="price-list__item">
+                <p class="price-list__text">Стрижка бороды</p>
+                <p class="price-list__text">от 200 грн.</p>
+              </li>
+              <li class="price-list__item">
+                <p class="price-list__text">Стрижка усов</p>
+                <p class="price-list__text">от 200 грн.</p>
+              </li>
+              <li class="price-list__item">
+                <p class="price-list__text">Бритье опасной бритвой</p>
+                <p class="price-list__text">от 200 грн.</p>
+              </li>
+            </ul>
+            <ul class="price-list">
+              <li class="price-list__item">
+                <p class="price-list__text">Cтрижка у стажера</p>
+                <p class="price-list__text">от 50 грн.</p>
+              </li>
+              <li class="price-list__item">
+                <p class="price-list__text">Стрижка под насадку</p>
+                <p class="price-list__text">от 200 грн.</p>
+              </li>
+              <li class="price-list__item">
+                <p class="price-list__text">Детская стрижка (до 12 лет)</p>
+                <p class="price-list__text">от 300 грн.</p>
+              </li>
+              <li class="price-list__item">
+                <p class="price-list__text">Камуфлирование седины</p>
+                <p class="price-list__text">от 200 грн.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="table-wrapper">
+            <div class="price-table">
+              <div class="price-table__row">
+                <p class="price-table__first-col">Мужская стрижка</p>
+                <div class="price-table__second-col"></div>
+                <p class="price-table__first-col">от 300 грн.</p>
+              </div>
+              <div class="price-table__row">
+                <p class="price-table__first-col">Стрижка бороды</p>
+                <div class="price-table__second-col"></div>
+                <p class="price-table__first-col">от 200 грн.</p>
+              </div>
+              <div class="price-table__row">
+                <p class="price-table__first-col">Стрижка усов</p>
+                <div class="price-table__second-col"></div>
+                <p class="price-table__first-col">от 200 грн.</p>
+              </div>
+              <div class="price-table__row">
+                <p class="price-table__first-col">Бритье опасной бритвой</p>
+                <div class="price-table__second-col"></div>
+                <p class="price-table__first-col">от 200 грн.</p>
+              </div>
+              <div class="price-table__row">
+                <p class="price-table__first-col">Cтрижка у стажера</p>
+                <div class="price-table__second-col"></div>
+                <p class="price-table__first-col">от 50 грн.</p>
+              </div>
+              <div class="price-table__row">
+                <p class="price-table__first-col">Стрижка под насадку</p>
+                <div class="price-table__second-col"></div>
+                <p class="price-table__first-col">от 200 грн.</p>
+              </div>
+              <div class="price-table__row">
+                <p class="price-table__first-col">
+                  Детская стрижка (до 12 лет)
+                </p>
+                <div class="price-table__second-col"></div>
+                <p class="price-table__first-col">от 300 грн.</p>
+              </div>
+              <div class="price-table__row">
+                <p class="price-table__first-col">Камуфлирование седины</p>
+                <div class="price-table__second-col"></div>
+                <p class="price-table__first-col">от 200 грн.</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <table class="price-table">
+              <tr>
+                <td>Стрижка бороды</td>
+                <td>от 200 грн.</td>
+              </tr>
+              <tr>
+                <td>Стрижка усов</td>
+                <td>от 200 грн.</td>
+              </tr>
+              <tr>
+                <td>Бритье опасной бритвой</td>
+                <td>от 200 грн.</td>
+              </tr>
+              <tr>
+                <td>Cтрижка у стажера</td>
+                <td>от 50 грн.</td>
+              </tr>
+              <tr>
+                <td>Стрижка под насадку</td>
+                <td>от 200 грн.</td>
+              </tr>
+              <tr>
+                <td>Детская стрижка (до 12 лет)</td>
+                <td>от 300 грн.</td>
+              </tr>
+              <tr>
+                <td>Камуфлирование седины</td>
+                <td>от 200 грн.</td>
+              </tr>
+            </table> -->
+
+          <a href="#appointment" class="button price__button">онлайн-запись</a>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="section features">
+        <div class="container">
+          <div>
+            <p class="section__pretitle">Старая традиционная школа</p>
+            <h2 class="section__title">Почему приходят именно к нам?</h2>
+            <p class="features__text">
+              О нас говорят только хорошее. Но лучше 1 раз увидеть и
+              прочувствовать, чем 10 раз прочитать.
+            </p>
+          </div>
+          <ul class="benefits-list">
+            <li class="benefits-list__item">
+              <p class="benefits-list__number">600<sup>+</sup></p>
+              <p class="benefits-list__text">
+                Довольных клиентов <br />
+                в день
+              </p>
+            </li>
+            <li class="benefits-list__item">
+              <p class="benefits-list__number">50<sup>+</sup></p>
+              <p class="benefits-list__text">Наград за отличный сервис</p>
+            </li>
+            <li class="benefits-list__item">
+              <p class="benefits-list__number">20<sup>+</sup></p>
+              <p class="benefits-list__text">
+                Лучших мастеров <br />
+                Киева
+              </p>
+            </li>
+            <li class="benefits-list__item">
+              <p class="benefits-list__number">100<sup>+</sup></p>
+              <p class="benefits-list__text">Подарков постоянным клиентам</p>
+            </li>
           </ul>
         </div>
+      </section>
 
-      </section>
-      <!-- About us -->
-      <section>
-        <ul>
-          <li><img src="./img/desktop/about1.jpg" alt="" /></li>
-          <li><img src="./img/desktop/about2.jpg" alt="" /></li>
-        </ul>
-        <div>
-          <p class="pretitle">О нас</p>
-          <h2 class="section__title">Лучший Барбершоп твоего города</h2>
-          <p>
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
-            к нам.
-          </p>
-          <p>
-            Мы команда, которая никогда не останавливается на достигнутом и
-            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-            никогда не сможешь быть прежним. Мы команда, которая всегда с
-            клиентами "на одной волне". Поэтому, мы всегда готовы
-            усовершенствовать каждого, кто к нам приходит!
-          </p>
-          <a href="">онлайн-запись</a>
-        </div>
-      </section>
-      <!-- Price -->
-      <section>
-        <p class="pretitle">Проведи время в компании лучших мастеров</p>
-        <h2 class="section__title">Услуги и цены</h2>
-        <table>
-          <tr>
-            <td>Мужская стрижка</td>
-            <td>от 300 грн.</td>
-          </tr>
-          <tr>
-            <td>Стрижка бороды</td>
-            <td>от 200 грн.</td>
-          </tr>
-          <tr>
-            <td>Стрижка усов</td>
-            <td>от 200 грн.</td>
-          </tr>
-          <tr>
-            <td>Бритье опасной бритвой</td>
-            <td>от 200 грн.</td>
-          </tr>
-          <tr>
-            <td>Cтрижка у стажера</td>
-            <td>от 50 грн.</td>
-          </tr>
-          <tr>
-            <td>Стрижка под насадку</td>
-            <td>от 200 грн.</td>
-          </tr>
-          <tr>
-            <td>Детская стрижка (до 12 лет)у</td>
-            <td>от 300 грн.</td>
-          </tr>
-          <tr>
-            <td>Камуфлирование седины</td>
-            <td>от 200 грн.</td>
-          </tr>
-        </table>
-        <a href="">онлайн-запись</a>
-      </section>
-      <!-- Features -->
-      <section>
-        <ul>
-          <li>
-            <div>
-              <p>600+</p>
-              <p>Довольных клиентов в день</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <p>50+</p>
-              <p>Наград за отличный сервис</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <p>20+</p>
-              <p>Лучших мастеров Киева</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <p>100+</p>
-              <p>Подарков постоянным клиентам</p>
-            </div>
-          </li>
-        </ul>
-        <div>
-          <p>старая традиционная школа</p>
-          <h2 class="section__title">Почему приходят именно к нам?</h2>
-          <p>
-            О нас говорят только хорошее. Но лучше 1 раз увидеть и
-            прочувствовать, чем 10 раз прочитать.
-          </p>
-        </div>
-      </section>
       <!-- Team -->
-      <section>
-        <p class="pretitle">для настоящих ценителей атмосферы</p>
-        <h2 class="section__title">Наши мастера</h2>
-        <ul>
-          <li>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-            <ul>
+      <section class="section masters">
+        <p class="section__pretitle">для настоящих ценителей атмосферы</p>
+        <h2 class="section__title masters__title">Наши мастера</h2>
+        <ul class="team-list">
+          <li class="team-list__item">
+            <img src="./img/mobile/johnsmith.jpg" alt="John's Smith photo" />
+            <h3 class="team-list__title">John Smith</h3>
+            <p class="team-list__text"></p>
+            <ul class="social-list">
               <li><a href=""></a></li>
               <li><a href=""></a></li>
               <li><a href=""></a></li>

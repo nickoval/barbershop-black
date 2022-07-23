@@ -1,0 +1,52 @@
+
+.features {
+  &__text {
+    @include fonts(18px, 400, 1.667);
+    margin-bottom: 44px;
+  }
+
+
+}
+
+.benefits-list {
+      display: flex;
+    flex-wrap: wrap;
+    // gap: 30px;
+
+   &__item {
+    display: block;
+    width: 193px;
+    height: 133px;
+    padding: 20px 20px;
+    color: var(--title-color);
+    background-color: var(--light-bg-color);text-align: center;
+
+    &:nth-child(odd) {
+        margin-right: 30px;
+      }
+
+    &:nth-child(even) {
+      margin-top: 30px;
+    }
+  }
+
+  &__number {
+    @include fonts(42px, 700, 1.357, 0.05em);
+    margin-bottom: 6px;
+
+    & sup {
+  font-size: 40%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+      top: -1.25em;
+      // @include fonts(16px, 600, 3.5);
+      color: var(--accent-color)
+    }
+  }  
+  
+  &__text {
+    @include fonts(11px, 600, 1.364, 0);
+  }
+
+}

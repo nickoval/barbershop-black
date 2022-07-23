@@ -2,12 +2,42 @@
   margin-top: 84px;
 
   &__title {
+    margin-bottom: 20px;
     font-family: 'Raleway';
-    @include fonts(28px, 700 , 1.179, 0.05em);
+    @include fonts(42px, 700 , 1.167, 0.05em);
     color: var(--title-color);
+
   }
+
+  &__pretitle {
+    margin-bottom: 20px;
+    @include flexY;
+    gap: 20px;
+    @include fonts(11px, 600, 1.364, 0.1em);
+    color: var(--title-color);
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 60px;
+      height: 1px;
+      background-color: var(--title-color);
+    }
+  }
+
+
+  &__text {
+    @include fonts(16px, 400, 1.625);
+  }
+
 }
 
 .container {
-  padding: 0 31px;
+  max-width: 480px;
+  width: 100%;
+  padding-left: 31px;
+  padding-right: 31px;
+  // padding: 0 31px;
 }
