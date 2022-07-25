@@ -3,6 +3,10 @@
 }
 
 .about {
+// width: 100%;
+// max-width: 480px;
+
+
   &__title {
     @include fonts(28px, 700, 1.179, 0.05em);
   }

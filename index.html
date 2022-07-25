@@ -28,7 +28,13 @@
           <a href="">
             <img src="./img/icon/logo.svg" alt="логотип" />
           </a>
-          <button type="button" class="button nav-menu-button">
+          <button
+            type="button"
+            class="button nav-menu-button"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            data-menu-button
+          >
             <svg class="nav-menu__icon">
               <use href="./img/icon/symbol-defs.svg#icon-menu"></use>
               <use href="./img/icon/symbol-defs.svg#icon-close "></use>
@@ -78,28 +84,28 @@
       <!-- About us -->
       <section class="section about">
         <div class="container">
-          <ul class="about-pictures">
+          <!-- <ul class="about-pictures">
             <li><img src="./img/desktop/about1.jpg" alt="" /></li>
             <li><img src="./img/desktop/about2.jpg" alt="" /></li>
-          </ul>
-          <div>
-            <p class="section__pretitle">О нас</p>
-            <h2 class="section__title">Лучший Барбершоп твоего города</h2>
-            <p class="section__text">
-              Если ты хочешь добавить в свой образ больше уверенности – тебе
-              точно к нам.
-            </p>
-            <p class="about__text">
-              Мы команда, которая никогда не останавливается на достигнутом и
-              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-              никогда не сможешь быть прежним. Мы команда, которая всегда с
-              клиентами "на одной волне". Поэтому, мы всегда готовы
-              усовершенствовать каждого, кто к нам приходит!
-            </p>
-            <a href="#appointment" class="button button--textblack"
-              >онлайн-запись</a
-            >
-          </div>
+          </ul> -->
+          <!-- <div> -->
+          <p class="section__pretitle">О нас</p>
+          <h2 class="section__title">Лучший Барбершоп твоего города</h2>
+          <p class="section__text">
+            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
+            к нам.
+          </p>
+          <p class="about__text">
+            Мы команда, которая никогда не останавливается на достигнутом и
+            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+            никогда не сможешь быть прежним. Мы команда, которая всегда с
+            клиентами "на одной волне". Поэтому, мы всегда готовы
+            усовершенствовать каждого, кто к нам приходит!
+          </p>
+          <a href="#appointment" class="button button--textblack"
+            >онлайн-запись</a
+          >
+          <!-- </div> -->
         </div>
       </section>
 
@@ -271,56 +277,331 @@
 
       <!-- Team -->
       <section class="section masters">
-        <p class="section__pretitle">для настоящих ценителей атмосферы</p>
-        <h2 class="section__title masters__title">Наши мастера</h2>
-        <ul class="team-list">
-          <li class="team-list__item">
-            <img src="./img/mobile/johnsmith.jpg" alt="John's Smith photo" />
-            <h3 class="team-list__title">John Smith</h3>
-            <p class="team-list__text"></p>
-            <ul class="social-list">
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
-          </li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-        </ul>
-      </section>
-      <!-- Contacts -->
-      <section>
-        <form action="">
-          <b id="appointment">Онлайн-запись</b>
-          <input type="text" name="" id="" />
-          <input type="text" name="" id="" />
-          <label for="">сообщение</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button type="submit">отправить</button>
-        </form>
-        <div>
-          <address>
-            <b>Контакты</b>
-            <ul>
-              <li><a href="">ул. Васильковая, 7А Киев, 08132</a></li>
-              <li><a href="">+38 044 111 11 11</a></li>
-              <li><a href="">barbershop@email.com</a></li>
-            </ul>
-          </address>
-          <div>
-            <p>время работы</p>
-            <p>Ежедневно с 9:00 до 22:00</p>
-          </div>
+        <div class="container">
+          <p class="section__pretitle">для настоящих ценителей атмосферы</p>
+          <h2 class="section__title masters__title">Наши мастера</h2>
+          <ul class="team-list">
+            <li class="team-list__item">
+              <img
+                class="team-list__img"
+                src="./img/mobile/johnsmith.jpg"
+                alt="John's Smith photo"
+              />
+              <h3 class="team-list__title">John Smith</h3>
+              <p class="team-list__text">Extreme Barber</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="" class="social-list__link link">
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="instagram"
+                    >
+                      <use
+                        href="./img/icon/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__link link">
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="twitter"
+                    >
+                      <use href="./img/icon/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    class="social-list__link link"
+                  >
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="facebook"
+                    >
+                      <use
+                        href="./img/icon/symbol-defs.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__link link">
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="linkedin"
+                    >
+                      <use
+                        href="./img/icon/symbol-defs.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="team-list__item">
+              <img
+                class="team-list__img"
+                src="./img/mobile/micheledoe.jpg"
+                alt="Michele's Doe photo"
+              />
+              <h3 class="team-list__title">Michele Doe</h3>
+              <p class="team-list__text">Extreme Barber</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="" class="social-list__link link">
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="instagram"
+                    >
+                      <use
+                        href="./img/icon/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__link link">
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="twitter"
+                    >
+                      <use href="./img/icon/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    class="social-list__link link"
+                  >
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="facebook"
+                    >
+                      <use
+                        href="./img/icon/symbol-defs.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__link link">
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="linkedin"
+                    >
+                      <use
+                        href="./img/icon/symbol-defs.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="team-list__item">
+              <img
+                class="team-list__img"
+                src="./img/mobile/alanblack.jpg"
+                alt="John's Smith photo"
+              />
+              <h3 class="team-list__title">Alan Black</h3>
+              <p class="team-list__text">Extreme Barber</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="" class="social-list__link link">
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="instagram"
+                    >
+                      <use
+                        href="./img/icon/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__link link">
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="twitter"
+                    >
+                      <use href="./img/icon/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    class="social-list__link link"
+                  >
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="facebook"
+                    >
+                      <use
+                        href="./img/icon/symbol-defs.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__link link">
+                    <svg
+                      class="social-list__icon"
+                      width="20"
+                      height="20"
+                      aria-label="linkedin"
+                    >
+                      <use
+                        href="./img/icon/symbol-defs.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </section>
+
+      <!-- Gallery -->
+      <section class="section gallery">
+        <div class="container">
+          <p class="section__pretitle">
+            На латинском языке “барба” означает “борода”
+          </p>
+          <h2 class="section__title visually-hidden">Галерея</h2>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <img src="./img/mobile/works1.jpg" alt="picture1" />
+            </li>
+            <li class="gallery__item">
+              <img src="./img/mobile/works2.jpg" alt="picture2" />
+            </li>
+            <li class="gallery__item">
+              <img src="./img/mobile/works3.jpg" alt="picture3" />
+            </li>
+            <li class="gallery__item">
+              <img src="./img/mobile/works4.jpg" alt="picture4" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contacts -->
+      <div class="contact-wrap">
+        <div class="container">
+          <section class="section online">
+            <form action="" class="online__form">
+              <b id="appointment" class="section__title online__title"
+                >Онлайн-запись</b
+              >
+              <input
+                type="text"
+                name="name"
+                id=""
+                class="online__input"
+                title="Введите ваше имя"
+                maxlength="50"
+                placeholder="Имя*"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                id=""
+                class="online__input"
+                title="Введите вашш телефонный номер"
+                maxlength="20"
+                placeholder="Телефон*"
+                required
+              />
+              <!-- <label for="">сообщение</label> -->
+              <textarea
+                name="comment"
+                id=""
+                class="online__textarea"
+                placeholder="сообщение"
+              ></textarea>
+              <button type="submit" class="button online__button">
+                отправить
+              </button>
+            </form>
+          </section>
+
+          <section class="section contacts">
+            <address class="adress">
+              <b class="section__title contacts__title">Контакты</b>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link" href=""
+                    >ул. Васильковая, 7А Киев, 08132</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="">+38 044 111 11 11</a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="">barbershop@email.com</a>
+                </li>
+              </ul>
+            </address>
+            <div class="time-info">
+              <p class="section__pretitle contacts__pretitle">время работы</p>
+              <p class="contacts__text">
+                Ежедневно с <time datetime="9:00"> 9:00 </time> до
+                <time datetime="22:00">22:00</time>
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
-    <footer>
-      <p>Copyright 2020</p>
-      <ul>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Youtube</a></li>
-      </ul>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <p class="copyright">&copy Copyright 2020</p>
+          <ul class="media-list footer__media">
+            <li class="media-list__item">
+              <a class="media-list__link" href="">Instagram</a>
+            </li>
+            <li class="media-list__item">
+              <a class="media-list__link" href="">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

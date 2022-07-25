@@ -6,8 +6,15 @@
 @import './base/section-container';
 
 @import './components/button';
-@import './components/header';
-@import './components/hero';
-@import './components/about-us';
-@import './components/price';
-@import './components/features';
+@import './components/social-list';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about-us';
+@import './layouts/price';
+@import './layouts/features';
+@import './layouts/masters';
+@import './layouts/gallery';
+@import './layouts/contact-wrap';
+@import './layouts/online';
+@import './layouts/footer';
