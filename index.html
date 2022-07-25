@@ -26,36 +26,49 @@
       <div class="container">
         <div class="header-inner">
           <a href="">
-            <img src="./img/icon/logo.svg" alt="логотип" />
+            <svg class="logo-icon" aria-label="Логотип сайта">
+              <use href="./img/icon/symbol-defs.svg#icon-logo"></use>
+            </svg>
+            <!-- <img src="./img/icon/logo.svg" alt="логотип" /> -->
           </a>
           <button
             type="button"
-            class="button nav-menu-button"
+            class="header-menu-button"
             aria-expanded="false"
             aria-controls="header-menu"
             data-menu-button
           >
-            <svg class="nav-menu__icon">
-              <use href="./img/icon/symbol-defs.svg#icon-menu"></use>
-              <use href="./img/icon/symbol-defs.svg#icon-close "></use>
+            <svg aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" href="./img/icon/symbol-defs.svg#icon-menu"></use>
+              <use class="icon-menu-close" href="./img/icon/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
-          <nav class="nav-menu">
-            <ul>
-              <li><a href="">О нас</a></li>
-              <li><a href="">Услуги и цены</a></li>
-              <li><a href="">Мастера</a></li>
-              <li><a href="">Контакты</a></li>
+          <div class="header-menu" id="header-menu" data-menu>
+            <nav class="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-list__item"><a class="nav-list__link" href="">О нас</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="">Услуги и цены</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="">Мастера</a></li>
+              <li class="nav-list__item"><a class="nav-list__link" href="">Контакты</a></li>
             </ul>
-            <ul>
-              <li><a href="">+38 044 111 11 11</a></li>
-              <li><a href="#appointment" class="button">онлайн-запись</a></li>
+            </nav>
+            <ul class="contact-list">
+              <li class="contact-list__item"><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+              <li class="contact-list__item"><a href="#appointment" class="button  button--textblack">онлайн-запись</a></li>
             </ul>
-            <ul>
+            <ul class="media-list page-header__media">
+              <li class="media-list__item">
+                <a class="media-list__link" href="">Instagram</a>
+              </li>
+              <li class="media-list__item">
+                <a class="media-list__link" href="">Youtube</a>
+              </li>
+            </ul>
+            <!-- <ul>
               <li><a href="">Instagram</a></li>
               <li><a href="">Youtube</a></li>
-            </ul>
-          </nav>
+            </ul> -->
+          </div>
         </div>
       </div>
     </header>
