@@ -64,14 +64,28 @@ address {
   padding-top: 84px;
   padding-bottom: 84px;
 }
+@media (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 .section__title {
   margin-bottom: 20px;
   font-family: "Raleway";
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.167;
   letter-spacing: 0.05em;
   color: var(--title-color);
+}
+@media screen and (min-width: 460px) {
+  .section__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+  }
 }
 .section__pretitle {
   margin-bottom: 20px;
@@ -101,26 +115,22 @@ address {
 }
 
 .container {
-  padding: 0 31px;
+  padding: 0 1rem;
   margin: 0 auto;
-  background-color: red;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 400px) {
   .container {
-    width: 480px;
-    background-color: transparent;
+    padding: 0 31px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: green;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: blue;
   }
 }
 
@@ -180,11 +190,9 @@ address {
 }
 
 .page-header {
+  position: absolute;
   width: 100%;
-  position: fixed;
   z-index: 10;
-  left: 0;
-  top: 0;
 }
 .page-header__media {
   flex-wrap: wrap;
@@ -312,10 +320,18 @@ address {
 }
 
 .about__title {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 1.179;
   letter-spacing: 0.05em;
+}
+@media screen and (min-width: 340px) {
+  .about__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.179;
+    letter-spacing: 0.05em;
+  }
 }
 .about__text {
   margin-top: 20px;
@@ -348,13 +364,6 @@ address {
   margin: 50px auto 0;
 }
 
-.table-wrapper {
-  width: 418px;
-  height: 440px;
-  padding: 30px;
-  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-
 .price-table {
   display: flex;
   flex-direction: column;
@@ -379,16 +388,26 @@ address {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 418px;
+  max-width: 418px;
   height: 440px;
-  padding: 30px;
+  padding: 30px 1rem;
   background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+@media screen and (min-width: 400px) {
+  .price-wrapper {
+    padding: 30px;
+  }
 }
 
 .price-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media screen and (max-width: 360px) {
+  .price-list {
+    font-size: 12px;
+  }
 }
 
 .price-list__item {
@@ -424,7 +443,16 @@ address {
 
 .benefits-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .benefits-list {
+    gap: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .benefits-list__item {
   display: block;
@@ -435,11 +463,13 @@ address {
   background-color: var(--light-bg-color);
   text-align: center;
 }
-.benefits-list__item:nth-child(odd) {
-  margin-right: 30px;
-}
-.benefits-list__item:nth-child(even) {
-  margin-top: 30px;
+@media screen and (min-width: 480px) {
+  .benefits-list__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .benefits-list__item:nth-child(even) {
+    margin-top: 30px;
+  }
 }
 .benefits-list__number {
   font-size: 42px;
@@ -487,8 +517,30 @@ address {
   padding-bottom: 0;
 }
 
+@media (min-width: 768px) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+.gallery__img {
+  width: 100%;
+}
 .gallery__item {
   margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .gallery__item {
+    margin-bottom: 0;
+  }
 }
 
 .contact-wrap {
@@ -555,11 +607,12 @@ address {
 
 .contacts__title {
   display: block;
-  color: var(--white-text-color);
   margin-bottom: 48px;
+  text-align: center;
+  color: var(--white-text-color);
 }
 .contacts__list {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.667;
   letter-spacing: 0.02em;
@@ -568,11 +621,32 @@ address {
   margin-left: 4px;
   margin-bottom: 44px;
 }
+@media screen and (min-width: 400px) {
+  .contacts__list {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+  }
+}
 .contacts__item {
   margin-bottom: 20px;
 }
 .contacts__item:last-child {
   margin-bottom: 0;
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+}
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--accent-color);
+}
+.contacts__icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 1rem;
+  stroke: currentColor;
 }
 .contacts__pretitle {
   color: var(--white-text-color);
@@ -581,11 +655,19 @@ address {
   background-color: var(--form-opacity-color);
 }
 .contacts__text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.667;
   letter-spacing: 0.02em;
   color: var(--hero-text-color);
+}
+@media screen and (min-width: 400px) {
+  .contacts__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer {
@@ -597,8 +679,23 @@ address {
   line-height: 1.364;
   letter-spacing: 0.2;
 }
+@media (min-width: 768px) {
+  .footer {
+    height: 127px;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 56px 0;
+  }
+}
 .footer__media {
   margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .footer__media {
+    margin-bottom: 0;
+  }
 }
 
 .footer-wrap {
@@ -610,13 +707,28 @@ address {
   margin-top: 30px;
   color: var(--hero-text-color);
 }
+@media (min-width: 768px) {
+  .copyright {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .copyright {
+    font-size: 9px;
+  }
+}
 
 .media-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 24px 40px;
+  gap: 24px 20px;
   color: var(--title-color);
+}
+@media screen and (min-width: 400px) {
+  .media-list {
+    gap: 24px 40px;
+  }
 }
 .media-list::before {
   content: "";

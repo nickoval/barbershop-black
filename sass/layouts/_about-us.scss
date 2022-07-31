@@ -8,7 +8,11 @@
 
 
   &__title {
-    @include fonts(28px, 700, 1.179, 0.05em);
+    @include fonts(26px, 700, 1.179, 0.05em);
+
+    @media screen and (min-width: 340px) {
+      @include fonts(28px, 700, 1.179, 0.05em);
+    }
   }
 
   &__text {

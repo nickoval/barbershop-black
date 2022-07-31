@@ -1,11 +1,22 @@
 .footer {
   height: 138px;
+
+  @include for-tablet-up {
+    height: 127px;
+  }
+
   padding: 44px 0;
+  @include for-tablet-up {
+    padding: 56px 0;
+  }
   background-color: var(--light-bg-color);
   @include fonts (11px, 600, 1.364, 0.2);
 
     &__media {
-          margin-bottom: 30px;
+      margin-bottom: 30px;
+      @include for-tablet-up {
+        margin-bottom: 0;
+      }
     }
 
 }
@@ -18,14 +29,25 @@
 
 .copyright {
   margin-top: 30px;
+
+  @include for-tablet-up {
+    margin-top: 0;
+  }
+
   color: var(--hero-text-color);
+  @media screen and (max-width: 400px) {
+    font-size: 9px;
+  }
 }
 
 .media-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 24px 40px;
+  gap: 24px 20px;
+  @media screen and (min-width: 400px) {
+    gap: 24px 40px;
+  }
   color: var(--title-color);
 
   &::before {
