@@ -55,6 +55,14 @@
   @media screen and (min-width: 400px) {
     padding: 0 31px;
   }
+
+  @include for-tablet-up {
+    padding: 0 39px;
+  }
+
+  @include for-desktop-up {
+    padding: 0 50px;
+  }
   margin: 0 auto;
   // background-color: red;
 
@@ -72,6 +80,10 @@
   //   width: $desktop;
   //   background-color: blue;
   // }
+  @include for-phone-up {
+    width: $mobile;
+  }
+
   @include for-tablet-up {
     width: $tablet;
   }

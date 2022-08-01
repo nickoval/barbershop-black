@@ -116,30 +116,78 @@
       <!-- About us -->
       <section class="section about">
         <div class="container">
-          <!-- <ul class="about-pictures">
-            <li><img src="./img/desktop/about1.jpg" alt="" /></li>
-            <li><img src="./img/desktop/about2.jpg" alt="" /></li>
-          </ul> -->
-          <!-- <div> -->
-          <p class="section__pretitle">О нас</p>
-          <h2 class="section__title about__title">
-            Лучший Барбершоп твоего города
-          </h2>
-          <p class="section__text">
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
-            к нам.
-          </p>
-          <p class="about__text">
-            Мы команда, которая никогда не останавливается на достигнутом и
-            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-            никогда не сможешь быть прежним. Мы команда, которая всегда с
-            клиентами "на одной волне". Поэтому, мы всегда готовы
-            усовершенствовать каждого, кто к нам приходит!
-          </p>
-          <a href="#appointment" class="button button--textblack"
-            >онлайн-запись</a
-          >
-          <!-- </div> -->
+          <ul class="about-pict">
+            <li class="about-pict__item">
+              <picture>
+              <source
+                srcset="
+                  ./img/desktop/about1.jpg    1x,
+                  ./img/desktop/about1@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/tablet/about1.jpg    1x,
+                  ./img/tablet/about1@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                src="./img/tablet/about1.jpg"
+                alt="Пример работы"
+                class="about-pict__img"
+                width="330"
+                height="235"
+              />
+              </picture>
+            </li>
+            <li class="about-pict__item">
+              <picture>
+              <source
+                srcset="
+                  ./img/desktop/about2.jpg    1x,
+                  ./img/desktop/about2@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/tablet/about2.jpg    1x,
+                  ./img/tablet/about2@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                src="./img/tablet/about2.jpg"
+                alt="Пример работы"
+                class="about-pict__img"
+                width="330"
+                height="235"
+              />
+              </picture>
+            </li>
+          </ul>
+          <div class="about-info">
+            <p class="section__pretitle">О нас</p>
+            <h2 class="section__title about__title">
+              Лучший Барбершоп твоего города
+            </h2>
+            <p class="about__pre-text">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе точно
+              к нам.
+            </p>
+            <p class="about__text">
+              Мы команда, которая никогда не останавливается на достигнутом и
+              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с
+              клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <a href="#appointment" class="button button--textblack"
+              >онлайн-запись</a
+            >
+          </div>
         </div>
       </section>
 
@@ -235,37 +283,6 @@
               </div>
             </div>
           </div> -->
-
-          <!-- <table class="price-table">
-              <tr>
-                <td>Стрижка бороды</td>
-                <td>от 200 грн.</td>
-              </tr>
-              <tr>
-                <td>Стрижка усов</td>
-                <td>от 200 грн.</td>
-              </tr>
-              <tr>
-                <td>Бритье опасной бритвой</td>
-                <td>от 200 грн.</td>
-              </tr>
-              <tr>
-                <td>Cтрижка у стажера</td>
-                <td>от 50 грн.</td>
-              </tr>
-              <tr>
-                <td>Стрижка под насадку</td>
-                <td>от 200 грн.</td>
-              </tr>
-              <tr>
-                <td>Детская стрижка (до 12 лет)</td>
-                <td>от 300 грн.</td>
-              </tr>
-              <tr>
-                <td>Камуфлирование седины</td>
-                <td>от 200 грн.</td>
-              </tr>
-            </table> -->
 
           <a href="#appointment" class="button price__button">онлайн-запись</a>
         </div>
