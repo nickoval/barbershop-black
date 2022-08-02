@@ -1,10 +1,16 @@
 .contacts {
 
   // background-image: url(/img/mobile/contacts.png);
+  @include for-desktop-up {
+    padding-left: 100px;
+    width: 625px;
+    height: 644px;
+  }
+
 
   &__title {
     display: block;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     text-align: center;
     color: var(--white-text-color);
   }
@@ -18,6 +24,12 @@
     text-align: left;
     margin-left: 4px;
     margin-bottom: 44px;
+    @include for-tablet-up {
+      margin-bottom: 0;
+    }
+    @include for-desktop-up {
+      margin-bottom: 70px;
+    }
   }
 
   &__item {
@@ -60,5 +72,12 @@
         @include fonts(18px, 400, 1.667);
       }
     color: var(--hero-text-color);
+  }
+}
+
+.address {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    display: flex;
+    justify-content: space-between;
   }
 }

@@ -15,3 +15,11 @@
   display: flex;
   align-items: $ai;
 }
+
+@mixin for-pixel-ratio-2 {
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    @content;
+  }
+}

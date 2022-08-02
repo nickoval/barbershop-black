@@ -11,6 +11,14 @@
     flex-wrap: wrap;
     justify-content: flex-start
   }
+
+  &__button {
+    color: var(--title-color);
+
+    @include for-tablet-up {
+      color: var(--white-text-color)
+    }
+  }
 }
 
 .header-inner {
@@ -63,39 +71,99 @@
 }
 
 .header-menu {
-  display: none;
-
-  position: fixed;
-  top: 0;
-  left: 30%;
-  // width: 100%;
-  width: 70vw;
-  height: 100vh;
-  padding: 118px 105px 120px 40px;
-  background-color: var(--white-text-color);
-  opacity: 0.98;
-  z-index: 20;
-  overflow-y: scroll;
   
-&.is-open {
-  display: block;
-    // overflow-y: scroll;
-}
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    // width: 100%;
+    width: 70vw;
+    height: 100vh;
+    padding: 118px 105px 120px 40px;
+    background-color: var(--white-text-color);
+    opacity: 0.98;
+    z-index: 20;
+    overflow-y: scroll;
+    
+    &.is-open {
+      display: block;
+      // overflow-y: scroll;
+    }
 
-}
+    .nav-list, .contact-list {
+      @include fonts(18px, 600, 1.389, 0.1em);
+      padding-bottom: 64px;
+    
+      &__item {
+        padding-bottom: 24px;
+        color: var(--title-color);
+        transition: color 0.2s;
 
-.nav-list, .contact-list {
-  @include fonts(18px, 600, 1.389, 0.1em);
-  padding-bottom: 64px;
-
-  &__item {
-    padding-bottom: 24px;
-
-    &:last-child {
-      padding-bottom: 0;
+        &:hover, &:focus {
+          color: var(--accent-color);
+        }
+    
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
     }
   }
+
+  @include for-tablet-up {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+
+    .page-header__media {
+      display: none;
+    }
+
+    .nav-list, .contact-list {
+      display: flex;
+      // height: 125px;
+      @include fonts(12px, 600, 1.333, 0.1em);
+
+      &__item {
+        color: var(--white-text-color);
+        transition: color 0.2s;
+              
+        &:hover, &:focus {
+          color: var(--accent-color);
+        }
+      }
+    }
+
+    .nav-list {
+      gap: 24px;
+      margin-right: auto;
+      // margin-top: 52px;
+    }
+
+    .contact-list {
+      flex-direction: column-reverse;
+      // margin-top: 40px;
+      gap: 20px;
+    }
+  }
+
+  @include for-desktop-up {
+    gap: 322px;
+
+    .nav-list, .contact-list {
+      gap: 40px;
+    }
+
+    .contact-list {
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+  }
+
 }
+
 
 
 .logo-icon {

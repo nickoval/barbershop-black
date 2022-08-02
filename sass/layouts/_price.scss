@@ -9,6 +9,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include for-tablet-up{
+    background-image: url(/img/tablet/price.png);
+  }
+
+  @include for-desktop-up {
+    background-image: url(/img/desktop/price.png);
+  }
+
   &__title {
     margin-bottom: 44px;
     color: var(--white-text-color);
