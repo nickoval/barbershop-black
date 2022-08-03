@@ -4,17 +4,17 @@
   // height: 826px;
   // padding-top: 84px;
   background-color: var(--price-bg-color);
-  background-image: url(/img/mobile/price.png);
+  background-image: url(../img/mobile/price.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include for-tablet-up{
-    background-image: url(/img/tablet/price.png);
+    background-image: url(../img/tablet/price.png);
   }
 
   @include for-desktop-up {
-    background-image: url(/img/desktop/price.png);
+    background-image: url(../img/desktop/price.png);
   }
 
   &__title {

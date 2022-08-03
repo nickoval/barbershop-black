@@ -3,19 +3,19 @@
   max-width: $mobile;
 
   background-color: #191c26;
-  background-image: url(/img/mobile/contacts.png);
+  background-image: url(../img/mobile/contacts.png);
   background-repeat: no-repeat;
   background-position: center bottom;
 
 
   @include for-tablet-up {
     max-width: $tablet;
-    background-image: url(/img/tablet/contacts.png);
+    background-image: url(../img/tablet/contacts.png);
   }
 
   @include for-desktop-up {
     max-width: $desktop;    
-    background-image: url(/img/desktop/contacts.png);
+    background-image: url(../img/desktop/contacts.png);
     background-position: right;
     background-size: 625px;
 
