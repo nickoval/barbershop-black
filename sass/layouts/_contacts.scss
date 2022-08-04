@@ -1,6 +1,5 @@
 .contacts {
 
-  // background-image: url(/img/mobile/contacts.png);
   @include for-desktop-up {
     padding-left: 100px;
     width: 625px;
@@ -55,7 +54,6 @@
     height: 18px;
     margin-right: 1rem;
     stroke: currentColor;
-    // stroke="#9da4bd" style="stroke: var(--color1, #9da4bd)"
   }
 
   &__pretitle {

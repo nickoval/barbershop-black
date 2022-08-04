@@ -1,8 +1,7 @@
 .online {
   // max-width: 480px;
   // width: 100%;
-  // padding-top: 84px;
-  // padding-bottom: 84px;
+
   text-align: center;
 
   @include for-tablet-up {
@@ -15,11 +14,7 @@
   }
 
 
-  // background-color: var(--dark-bg-color);
 
-  // &__form {
-  //   padding-bottom: 84px;
-  // }
 
   &__title {
     display: block;

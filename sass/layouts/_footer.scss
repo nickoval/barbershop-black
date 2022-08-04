@@ -51,29 +51,3 @@
   }
 }
 
-// .media-list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-end;
-//   gap: 24px 20px;
-//   @media screen and (min-width: 400px) {
-//     gap: 24px 40px;
-//   }
-//   @include fonts (11px, 600, 1.364, 0.2);
-//   color: var(--title-color);
-//   transition: color 0.2s;
-
-//   &__link {
-//     &:hover, &:focus {
-//       color: var(--accent-color);
-//     }
-//   }
-
-//   &::before {
-//       content: '';
-//       display: inline-block;
-//       width: 60px;
-//       height: 1px;
-//       background-color: var(--title-color);
-//     }
-// }

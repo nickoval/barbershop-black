@@ -37,47 +37,6 @@
 
 }
 
-// .table-wrapper {
-//   width: 418px;
-//   height: 440px;
-//   padding: 30px;
-//   background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-// }
-
-.price-table {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  &__row {
-    display: flex;
-    align-items: baseline;
-    // justify-content: space-between;
-      color: var(--hero-text-color);
-  }
-  
-  // &__first-col::after {
-  //   content: '';
-  //   display: inline-block;
-  //   margin-left: 4px;
-  //   margin-right: 4px;
-  //   flex-basis: 100px;
-  //   height: 1px;
-  //   background-color: var(--hero-text-color);
-  // }
-
-    &__first-col {
-      white-space: nowrap;
-    }
-
-  &__second-col {
-    flex-basis: 100%;
-    margin-left: 6px;
-    margin-right: 6px;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.12);
-    }
-
-}
 
 .price-wrapper {
   display: flex;
@@ -156,9 +115,7 @@
     flex-grow: 1;
   }
 
-  // &:last-child {
-  //   margin-bottom: 0;
-  // }
+
 }
 
 .price-list__text {

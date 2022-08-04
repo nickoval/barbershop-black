@@ -36,25 +36,25 @@
   height: 40px;
   border: 0;
   background-color: transparent;
-    cursor: pointer;
-    // outline: 1px solid red;
-    color: var(--white-text-color);
+  cursor: pointer;
+
+  color: var(--white-text-color);
   
-    @media screen and (min-width: $tablet) {
-      display: none;
-    }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
   
-    &.is-open {
-      color:var(--title-color);
-    }
+  &.is-open {
+    color:var(--title-color);
+  }
   
-    &:hover, &:hover.is-open {
-      color: var(--accent-color)
-    }
+  &:hover, &:hover.is-open {
+    color: var(--accent-color)
+  }
   
-    & svg {
-      fill: currentColor
-    }
+  & svg {
+    fill: currentColor
+  }
     
   .icon-menu-close {
     display: none;

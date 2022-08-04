@@ -1,7 +1,6 @@
 .social-list {
   display: flex;
   justify-content: center;
-  // margin-bottom: 30px;
 }
 
 .social-list__item:not(:last-child) {
@@ -23,7 +22,6 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
-    // background-color: var(--accent-color);
     outline: none;
   }
 }
